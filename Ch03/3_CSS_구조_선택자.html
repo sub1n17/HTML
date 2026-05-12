@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS 구조 선택자</title>
+        <style>
+            /* 구조 선택자 */
+            .city > li:first-child { color: red; }             /* 서울 */
+            .city > em:last-child { color: blue; }             /* 세종 */
+            .city > li:nth-child(2) { color: green; }          /* 대전 */
+            .city > li:nth-child(4) { color: brown; }          /* 부산 */
+            .city > em:nth-of-type(1) { color: olivedrab; }    /* 인천 */
+
+            /* 
+                nth-child(n) → 부모의 전체 자식 순서 기준 
+                nth-of-type(n) → 같은 태그끼리만 세어서 순서 계산
+            */
+            ul:nth-child(3) > li:nth-child(1) { background-color: pink; }
+            /* ㄴ> 부모 요소(body) 안에서 3번째 자식인 ul 중 첫 번째 li 선택 */
+            ul:nth-of-type(2) > li:nth-child(2) { background:  orange; }
+            /* ㄴ> ul 태그들 중 2번째 ul 안의 2번째 li */
+
+        </style>
+    </head>
+    <body>
+        <h3>3. CSS 구조 선택자</h3>
+
+        <ul class="city">
+            <li>서울</li>
+            <li>대전</li>
+            <li>대구</li>
+            <li>부산</li>
+            <li>광주</li>
+            <em>인천</em>
+            <em>울산</em>
+            <em>세종</em>
+        </ul>
+        <ul>
+            <li>한국</li>
+            <li>미국</li>
+            <li>일본</li>
+            <li>중국</li>
+    </ul>
+
+    </body>
+</html>
