@@ -2,15 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>관리자 메인</title>
+        <title>관리자_메인</title>
         <link rel="stylesheet" href="./css/index.css" />
     </head>
     <body>
         <div id="container">
             <header>
-                <a href="./index.html" class="logo"
-                    ><img src="../images/admin/admin_logo.jpg" alt="로고"
-                /></a>
+                <a href="./index.html" class="logo">
+                    <img src="../images/admin/admin_logo.jpg" alt="로고"/>
+                </a>
                 <ul>
                     <li><a href="#">HOME |</a></li>
                     <li><a href="#">로그아웃 |</a></li>
@@ -23,24 +23,30 @@
                     <div><p>주요 기능</p></div>
                     <ul>
                         <li>
-                            상품관리
+                            <span>상품관리</span>
                             <ul>
-                                <li><a href="#" class="active">상품목록</a></li>
-                                <li><a href="#">상품등록</a></li>
+                                <li><a href="#">L <span>상품목록</span></a></li>
+                                <li><a href="#">L <span>상품등록</span></a></li>
                             </ul>
                         </li>
                         <li>
                             <span>주문관리</span>
-                            <a href="#">주문목록</a>
+                            <ul>
+                                <li><a href="#">L <span>주문목록</span></a></li>
+                            </ul>
+                            
                         </li>
                         <li>
                             <span>회원관리</span>
-                            <a href="#">회원목록</a>
+                             <ul>
+                                <li><a href="#">L <span>회원목록</span></a></li>
+                            </ul>
+                            
                         </li>
                     </ul>
                 </aside>
 
-                <section>
+                <section class="admin_main">
                     <h2>관리자 메인</h2>
 
                     <!-- 상품현황 -->
